@@ -1,0 +1,213 @@
+.xoo-el-opac {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    transition: all 0.2s ease-out
+}
+
+.xoo-el-modal {
+    top: 0;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10000000000;
+    overflow: auto;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+}
+
+.xoo-el-modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+.xoo-el-inmodal {
+    display: inline-block;
+    background: #fff;
+    position: relative;
+    vertical-align: middle;
+    width: 90%;
+    text-align: left;
+    border-radius: 5px;
+    height: 100%;
+    overflow: auto;
+}
+
+.xoo-el-popup-active .xoo-el-modal{
+    opacity: 1;
+    transform: scale(1);
+}
+.xoo-el-popup-active .xoo-el-opac{
+    opacity: 0.7;
+}
+
+.xoo-el-popup-active.xoo-el-container{
+    visibility: visible;
+}
+.xoo-el-container{
+    visibility: hidden;
+}
+
+
+span.xoo-el-close {
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    font-size: 19px;
+    padding: 5px;
+    color: #a2a1a1;
+    cursor: pointer;
+}
+
+span.xoo-el-close:hover{
+    color: #000;
+    transform: scale(1.2);
+}
+
+.xoo-el-head span {
+    display:  block;
+}
+
+.xoo-el-head {
+    display:  table;
+    margin: 0 auto;
+    text-align:  center;
+    text-transform:  uppercase;
+    margin-bottom: 15px;
+}
+
+
+
+button.xoo-el-action-btn {
+    clear:  both;
+    width:  100%;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    min-height: 35px;
+    cursor: pointer;
+}
+
+body.xoo-el-popup-active{
+    overflow-y: hidden;
+}
+
+
+.xoo-el-notice-error{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+.xoo-el-notice-success{
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.xoo-el-notice.xoo-el-active{
+    padding: 7px 15px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.xoo-el-container input[type="text"] , .xoo-el-container input[type="password"] , .xoo-el-container input[type="email"]{
+    width: 100%;
+    margin: 0 0 20px 0;
+    min-height: 35px;
+    text-indent: 5px;
+}
+.xoo-el-section{
+    display: none;
+}
+.xoo-el-section.xoo-el-active{
+    display: block;
+}
+.xoo-el-switch{
+    cursor: pointer;
+}
+
+input[type="text"]#xoo-el-reg-fname {
+    width: 48%;
+    float:  left;
+}
+
+input[type="text"]#xoo-el-reg-lname {
+    width: 48%;
+    float: right;
+}
+.xoo-el-lostpw-tgr , .xoo-el-login-tgr , .xoo-el-reg-tgr{
+    cursor: pointer;
+}
+
+.xoo-el-head-nav{
+    text-decoration: underline;
+}
+
+
+.xoo-el-form-txt{
+    margin-bottom: 10px;
+    display: block;
+}
+.xoo-el-head-action a{
+    margin: 0 5px;
+}
+.xoo-el-action-form > a.xoo-el-lostpw-tgr{
+    display: table;
+    float:  right;
+    margin-top: -5px;
+    clear:  both;
+    text-transform:  uppercase;
+    font-size:  13px;
+    cursor:  pointer;
+    margin-bottom:  5px;
+}
+.xoo-el-head-action a:hover{
+    text-decoration: underline;
+}
+.xoo-el-notice a.xoo-el-lostpw-tgr {
+    margin-left: 5px;
+    text-decoration: underline;
+}
+.xoo-el-lostpw-success .woocommerce-message{
+    margin: 0 0 10px 0;
+}
+.xoo-el-sidebar{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    display:  table-cell;
+}
+.xoo-el-wrap {
+    min-height:  100%;
+    display: table;
+    width: 100%;
+}
+
+.xoo-el-main {
+    display:  table-cell;
+    padding: 15px;
+    position: relative;
+}
+.xoo-el-footer-note{
+   display: block;
+   position: absolute;
+   bottom: 10px;
+}
+@media only screen and (max-width: 769px) {
+   .xoo-el-sidebar{
+        display: none;
+    }
+}
